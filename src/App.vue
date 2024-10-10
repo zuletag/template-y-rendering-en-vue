@@ -12,6 +12,7 @@ export default {
         tSize: '',
         bOpacity: false,
         box: 'box',
+        contenedor: 'contenedor',
         tStyles: [
           { value: '', label: 'Default' },
           { value: 'Roboto', label: 'Roboto' },
@@ -30,7 +31,7 @@ export default {
 </script>
 
 <template>
-  <div class="contenedor">
+  <div :class="{'contenedor': form.contenedor}">
     <div class="container p-0 m-0">
       <div class="row">
         <div class="col-5 form-box p-5">
